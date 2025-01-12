@@ -14,7 +14,7 @@ function Hero() {
 });
 
   return (
-    <div id="#home"  className="md:mt-36 sm:mt-44 sm:mb-5 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 place-content-center overflow-hidden place-items-center w-full h-auto">
+    <div id="#home"  className="md:mt-36 sm:mt-32 sm:mb-5 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 place-content-center overflow-hidden place-items-center w-full h-auto">
      <motion.div
      
      initial={{ opacity: 0 , x:-90}}
