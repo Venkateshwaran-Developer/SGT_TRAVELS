@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Anton&family=Bungee+Outline&family=Chau+Philomene+One:ital@0;1&family=Joti+One&family=Monoton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rampart+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Scribble&family=Sixtyfour+Convergence&family=Spicy+Rice&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.lenis,
+html.lenis body {
+height: auto;
+}
+.lenis.lenis-smooth {
+scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+pointer-events: none;
+}
