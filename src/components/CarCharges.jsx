@@ -35,15 +35,7 @@ function CarCharges() {
 
           <div className="flex justify-center rounded-3xl w-full bg-gray-200">
             <div className="flex flex-col items-start justify-center  h-auto p-5 gap-2 rounded-2xl">
-              <div className="flex space-x-2 ">
-                <box-icon
-                  size="xs"
-                  type="solid"
-                  color="black"
-                  name="right-arrow"
-                ></box-icon>
-                <h3>Base Charge:₹11/km</h3>
-              </div>
+              
               <div className="flex space-x-2 ">
                 <box-icon
                   size="xs"
@@ -119,15 +111,7 @@ function CarCharges() {
 
           <div className="flex justify-center rounded-3xl w-full bg-gray-200">
             <div className="flex flex-col items-start justify-center  h-auto p-5 gap-2 rounded-2xl">
-              <div className="flex space-x-2 ">
-                <box-icon
-                  size="xs"
-                  type="solid"
-                  color="black"
-                  name="right-arrow"
-                ></box-icon>
-                <h3>Base Charge:₹12/km</h3>
-              </div>
+              
               <div className="flex space-x-2 ">
                 <box-icon
                   size="xs"
@@ -203,15 +187,7 @@ function CarCharges() {
 
           <div className="flex justify-center rounded-3xl w-full bg-gray-200">
             <div className="flex flex-col items-start justify-center  h-auto p-5 gap-2 rounded-2xl">
-              <div className="flex space-x-2 ">
-                <box-icon
-                  size="xs"
-                  type="solid"
-                  color="black"
-                  name="right-arrow"
-                ></box-icon>
-                <h3>Base Charge:₹16/km</h3>
-              </div>
+              
               <div className="flex space-x-2 ">
                 <box-icon
                   size="xs"
@@ -287,15 +263,7 @@ function CarCharges() {
 
           <div className="flex justify-center rounded-3xl w-full bg-gray-200">
             <div className="flex flex-col items-start justify-center  h-auto p-5 gap-2 rounded-2xl">
-              <div className="flex space-x-2 ">
-                <box-icon
-                  size="xs"
-                  type="solid"
-                  color="black"
-                  name="right-arrow"
-                ></box-icon>
-                <h3>Base Charge:₹17/km</h3>
-              </div>
+              
               <div className="flex space-x-2 ">
                 <box-icon
                   size="xs"
@@ -371,15 +339,7 @@ function CarCharges() {
 
           <div className="flex justify-center rounded-3xl w-full bg-gray-200">
             <div className="flex flex-col items-start justify-center  h-auto p-5 gap-2 rounded-2xl">
-              <div className="flex space-x-2 ">
-                <box-icon
-                  size="xs"
-                  type="solid"
-                  color="black"
-                  name="right-arrow"
-                ></box-icon>
-                <h3>Base Charge:₹13/km</h3>
-              </div>
+             
               <div className="flex space-x-2 ">
                 <box-icon
                   size="xs"

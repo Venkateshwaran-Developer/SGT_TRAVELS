@@ -113,7 +113,7 @@ export default function Testimonials() {
             <h1 className="text-[20px] text-white">Arun</h1>
             <p className="text-gray-500">Coimbatore</p>
             <p className="text-gray-500">
-            I&apos;m working in an IT firm. Blue Taxi provide my transport in
+            I&apos;m working in an IT firm. SGT Travels provide my transport in
               morning and evening for the past 2 years & till now i didnt find
               any issues from them.
             </p>

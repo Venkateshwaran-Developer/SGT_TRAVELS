@@ -27,8 +27,8 @@ function AboutUs() {
           constantly provide new, clean cars with professional and experienced
           chauffeurs. Our 24x7 online reservation system offer you to hire car
           any where in Tirupur by just on a single mouse click. Bookings at
-          bluetaxi.in India can be made by logging on to the website, calling
-          the 24x7 customer care center or walking into any of the Blue Taxi.
+          sgttravels.vercel.app India can be made by logging on to the website, calling
+          the 24x7 customer care center or walking into any of the sgttravels.
         </p>
 
       </div>

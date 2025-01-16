@@ -1,6 +1,13 @@
 import 'boxicons';
 import './Footer.css';
+import {useState} from 'react';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+
 function Footer() {
+ 
+  const [email, setEmail] = useState('');
+  
 
   
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -13,6 +20,37 @@ function Footer() {
     });
 });
   
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const serviceId = "service_sw1ay1j";
+  const templateId = "template_e65npch";
+  const publicKey = "FOA_HTaJuo3XR2oe2";
+
+  const templateParams = {
+    
+    from_email: email,
+    to_name: "SGT Travels",
+  };
+
+  emailjs.send(serviceId, templateId, templateParams, publicKey)
+  .then((response) => {
+    console.log('SUCCESS!', response.status, response.text);
+    
+    setEmail('');
+    toast.success('Response Submitted Successfully')
+  }
+  )
+  .catch((error) => {
+    console.log('FAILED...', error);
+  });
+
+
+
+
+
+}
  
   return (
     <div>
@@ -36,15 +74,17 @@ function Footer() {
               >
                 <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
               </svg>
-              <a href='tel://+917639591469'>+91 76395 91469</a>
+              <a href='tel://+917639591469' >+91 76395 91469 , </a>
+              <a href='tel://+918778813712'> +91 87788 13712 , </a>
+              <a href='tel://+919566644905'>+91 95666 44905</a>
             </div>
-            <div className="flex justify-center items-center gap-5 ">
+            <div className="flex items-center gap-5 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="16"
+                height="16"
                 fill="currentColor"
-                className="bi bi-geo-fill sm:w-12 sm:h-12  md:w-7 md:h-7"
+                className="bi bi-geo-fill "
                 viewBox="0 0 16 16"
               >
                 <path
@@ -53,7 +93,7 @@ function Footer() {
                 />
               </svg>
               <h1>
-                NO:3/5 Muthu Vanigavalagm Velliyankadu South Opp Of Samu Medical Tirupur - 641604.
+                Avinashi,Tiruppur-641654.
               </h1>
             </div>
             <div className="flex items-center gap-5">
@@ -67,12 +107,12 @@ function Footer() {
               >
                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
               </svg>
-              <a href='mailto://sgttravels@gmail.com'>sgttravels@gmail.com</a>
+              <a href='mailto://sgttourstravels2025@gmail.com'>sgttourstravels2025@gmail.com</a>
             </div>
           </div>
           <div className='flex gap-5'>
           <div className='flex justify-center items-center h-8 w-8 hover:bg-white bg-gray-500 rounded-full'>
-          <a href="whatsapp://send?text=Welcome to SGT Travels... How can i help you..?!&phone=+917639591469" className='flex justify-center'><box-icon  type='logo' name='whatsapp'></box-icon></a>
+          <a href="whatsapp://send?text=&phone=+917639591469" className='flex justify-center'><box-icon  type='logo' name='whatsapp'></box-icon></a>
             
           </div>
           <div className='flex justify-center items-center h-8 w-8 hover:bg-white bg-gray-500 rounded-full'>
@@ -135,18 +175,23 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col  md:justify-start w-full h-full md:items-start sm:pt-10 lg:pt-0 gap-5 lg:px-10">
+        <div >
+        <form onSubmit={handleSubmit} className="flex flex-col  md:justify-start w-full h-full md:items-start sm:pt-10 lg:pt-0 gap-5 lg:px-10">
           <h1 className=" border-b-2 font-Chau text-xl">News Letter</h1>
 
           <p>Subscribe Our Newsletter To Get Latest Update And News</p>
           <input
-            className="p-4 rounded-2xl"
+            className="p-4 rounded-2xl text-black"
             type="email"
+            value={email}
+            required
             placeholder="Enter Your Email"
+            onChange={(e)=>setEmail(e.target.value)}
           ></input>
           <div>
-            <a
-              href="#_"
+            <button
+             type='submit'
+             
               className="relative  items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group"
             >
               <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
@@ -155,9 +200,12 @@ function Footer() {
                 Subscribe
               </span>
               <span className="absolute inset-0 border-2 border-white rounded-full"></span>
-            </a>
+            </button>
+            <ToastContainer/>
           </div>
+          </form>
         </div>
+        
       </div>
 
       <div className="wrapper  bg-black ">
