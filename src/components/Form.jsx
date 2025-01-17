@@ -247,9 +247,7 @@ function Form() {
                 className="block border-2 p-3 w-52 pr-10 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 placeholder="MM/DD/YY"
               />
-              <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-                <i className="fas fa-calendar-alt text-gray-400"></i>
-              </div>
+              
             </div>
           </div>
           {/* <div
