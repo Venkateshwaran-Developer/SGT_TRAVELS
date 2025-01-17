@@ -173,6 +173,7 @@ export default function Header() {
           </IconButton>
         </div>
         <List className="bg-green">
+        <a href="#booking">
           <ListItem className="text-white">
             <ListItemPrefix>
             <svg
@@ -188,8 +189,9 @@ export default function Header() {
                 />
               </svg>
             </ListItemPrefix>
-           <a href="#booking"> Book Your Ride</a>
-          </ListItem>
+            Book Your Ride
+          </ListItem></a>
+          <a href="#aboutus">
           <ListItem className="text-white">
             <ListItemPrefix>
             <svg
@@ -205,8 +207,9 @@ export default function Header() {
                 />
               </svg>
             </ListItemPrefix>
-           <a href="#aboutus">AboutUs</a>
-          </ListItem>
+           AboutUs
+          </ListItem></a>
+          <a href="#services">
           <ListItem className="text-white">
             <ListItemPrefix>
               <svg
@@ -222,8 +225,9 @@ export default function Header() {
                 />
               </svg>
             </ListItemPrefix>
-           <a href="#services"> Services</a>
-          </ListItem>
+            Services
+          </ListItem></a>
+          <a href="#taxirate">
           <ListItem className="text-white">
             <ListItemPrefix>
               <svg
@@ -239,8 +243,9 @@ export default function Header() {
                 />
               </svg>
             </ListItemPrefix>
-           <a href="#taxirate"> Pricing</a>
-          </ListItem>
+            Pricing
+          </ListItem></a>
+          <a href="#reviews">
           <ListItem className="text-white">
             <ListItemPrefix>
               <svg
@@ -256,8 +261,9 @@ export default function Header() {
                 />
               </svg>
             </ListItemPrefix>
-           <a href="#reviews"> Testimonials</a>
-          </ListItem>
+            Testimonials
+          </ListItem></a>
+          <a href="#faq">
           <ListItem className="text-white">
             <ListItemPrefix>
               <svg
@@ -273,8 +279,8 @@ export default function Header() {
                 />
               </svg>
             </ListItemPrefix>
-           <a href="#faq">FAQ</a>
-          </ListItem>
+           FAQ
+          </ListItem></a>
         </List>
         
       </Drawer>
